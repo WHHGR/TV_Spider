@@ -12,7 +12,7 @@ else
  echo "文件夹已经存在"
 fi
 #下载源码
-wget --no-check-certificate -qO- "https://codeload.github.com/sec-an/TV_Spider/zip/refs/heads/main" -O '/tmp/tvsp.zip'
+wget --no-check-certificate -qO- "https://codeload.github.com/WHHGR/TV_Spider/zip/refs/heads/main" -O '/tmp/tvsp.zip'
 md5n=$(md5sum /tmp/tvsp.zip | awk '{print $1}')
 #更新
 if [[ $md5n != $md5o && -s /tmp/tvsp.zip ]];then
